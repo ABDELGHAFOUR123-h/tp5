@@ -1,14 +1,12 @@
-let nbr = Math.floor(Math.random()*10)+1;
-let T = parseInt(prompt("saisir un nombre entre 1 et 10"));
-do {
-    
-if( T > nbr )
-alert("petit");
+let nbr1 = parseFloat(prompt("entrer le premier nombre"));
+let nbr2 = parseFloat(prompt("entrer la deuxieme nombre"));
 
-else if (T < nbr) {
-    alert("grand");
-} else {
-    alert("BRAVO");
-    
-}
-} while (T != nbr);
+let somme = nbr1 + nbr2;
+let difference = nbr1 - nbr2;
+let produit = nbr1 * nbr2;
+let quotient = nbr1 % nbr2;
+
+console.log("La somme est : " +somme);
+console.log("Le difference est : "+difference);
+console.log("Le produit est : " +produit);
+console.log("Le quotient est : " +quotient);
